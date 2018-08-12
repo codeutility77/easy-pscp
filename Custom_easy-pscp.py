@@ -2,7 +2,7 @@ import subprocess
 import getpass
 
 def final_confirmation(port_var, local_file_path_var, target_string):
-    print(f"You are about to execute: \nC:\\installs\\pscp.exe -P {port_var} {local_file_path_var} {target_string}\n")
+    print(f"You are about to execute: \npscp.exe -P {port_var} {local_file_path_var} {target_string}\n")
     answer = input("Is that ok? [Y/N] CTRL+C to cancel.")
     answer = answer.upper()
     if answer == 'Y' or answer == 'YES':
